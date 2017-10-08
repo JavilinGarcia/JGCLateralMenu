@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuSectionView" customModule="MisConsultas" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="70l-PM-0gZ" id="uJJ-bB-wKs"/>
+                <outlet property="layerView" destination="AKA-1t-WbB" id="mSJ-Cb-BP5"/>
+                <outlet property="loadingContainerView" destination="lqC-Hn-3Sg" id="Po7-mf-Uh4"/>
+                <outlet property="titleLabel" destination="fvN-1D-fWQ" id="feY-R3-gfz"/>
+                <outlet property="topLayerView" destination="O72-9h-Urv" id="s3b-r0-SVZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="utj-iV-cjb">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O72-9h-Urv" customClass="LayerView" customModule="MisConsultas" customModuleProvider="target">
+                    <rect key="frame" x="20" y="0.0" width="386" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="7ba-35-tkb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="topLayer" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftLayer" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="rightLayer" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLayer" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layerColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="70l-PM-0gZ">
+                    <rect key="frame" x="20" y="55.5" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="F1F-MG-iPV"/>
+                        <constraint firstAttribute="width" constant="24" id="hDb-Oj-0Cq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvN-1D-fWQ">
+                    <rect key="frame" x="64" y="55" width="322" height="25"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqC-Hn-3Sg">
+                    <rect key="frame" x="366" y="57.5" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKA-1t-WbB" customClass="LayerView" customModule="MisConsultas" customModuleProvider="target">
+                    <rect key="frame" x="20" y="134" width="386" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="zdh-KF-yVe"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="topLayer" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftLayer" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="rightLayer" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLayer" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layerColor">
+                            <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AKA-1t-WbB" secondAttribute="trailing" id="6JN-Oo-r9O"/>
+                <constraint firstAttribute="trailing" secondItem="fvN-1D-fWQ" secondAttribute="trailing" constant="20" id="6rY-ae-hti"/>
+                <constraint firstItem="fvN-1D-fWQ" firstAttribute="leading" secondItem="70l-PM-0gZ" secondAttribute="trailing" constant="20" id="NCl-xM-xKk"/>
+                <constraint firstItem="O72-9h-Urv" firstAttribute="top" secondItem="utj-iV-cjb" secondAttribute="top" id="OSO-Wa-ApA"/>
+                <constraint firstItem="70l-PM-0gZ" firstAttribute="leading" secondItem="utj-iV-cjb" secondAttribute="leading" constant="20" id="PKv-B8-ZmI"/>
+                <constraint firstAttribute="bottom" secondItem="AKA-1t-WbB" secondAttribute="bottom" id="Rfd-Ur-iPv"/>
+                <constraint firstAttribute="trailing" secondItem="O72-9h-Urv" secondAttribute="trailing" id="WlU-qj-wlq"/>
+                <constraint firstItem="fvN-1D-fWQ" firstAttribute="centerY" secondItem="utj-iV-cjb" secondAttribute="centerY" id="buB-Xb-0Ea"/>
+                <constraint firstItem="70l-PM-0gZ" firstAttribute="centerY" secondItem="utj-iV-cjb" secondAttribute="centerY" id="iDv-UB-pLy"/>
+                <constraint firstItem="O72-9h-Urv" firstAttribute="leading" secondItem="utj-iV-cjb" secondAttribute="leading" constant="20" id="kB6-57-5h9"/>
+                <constraint firstItem="AKA-1t-WbB" firstAttribute="leading" secondItem="utj-iV-cjb" secondAttribute="leading" constant="20" id="pNJ-4g-9Fy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-42" y="-76.5"/>
+        </view>
+    </objects>
+</document>
