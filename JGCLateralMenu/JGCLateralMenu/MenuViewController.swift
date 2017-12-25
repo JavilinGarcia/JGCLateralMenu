@@ -97,6 +97,13 @@ extension MenuViewController: MenuViewDataSource, MenuViewDelegate {
         menuSection[kIsOpen] = false as AnyObject
         menuSection[kMenuImage] = "menu_home" as AnyObject
         
+        var subSection:[String:AnyObject] = [String:AnyObject]()
+        subSection[kTitle] = "SubSection 0" as AnyObject
+        subSection[kMenuSection] = 0 as AnyObject
+        subSection[kIsOpen] = false as AnyObject
+        
+        menuSection[kValue] = [subSection] as AnyObject
+        
         var menuSection1:[String:AnyObject] = [String:AnyObject]()
         menuSection1[kTitle] = "Section 1" as AnyObject
         menuSection1[kMenuSection] = 1 as AnyObject
@@ -237,11 +244,26 @@ extension MenuViewController: MenuViewDataSource, MenuViewDelegate {
     }
     
     func didSelectRowAtIndexPath(menuSection: MenuView, indexPath: IndexPath) {
-
+        if indexPath.row == 0 {
+            self.present(vcString: "FirstViewController")
+        }
     }
     
     func didSelectSection(menuSection: MenuView, section: Int) {
-    
+        
+        if mOptions![section][kValue] == nil {
+            switch section {
+            case 0:
+//                self.present(vcString: "FirstViewController")
+                break
+            case 1:
+                self.present(vcString: "SecondViewController")
+                break
+            default:
+                break
+            }
+        }
+
     }
     
     func showSection() -> Int {
@@ -272,8 +294,12 @@ extension MenuViewController: ImageHeaderViewProtocol {
 
     }
     
-    func present(view: UIViewController) {
-
+    func present(vcString: String) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let resultViewController = storyBoard.instantiateViewController(withIdentifier: vcString)
+        
+        self.navigationController?.pushViewController(resultViewController, animated: false)
     }
 }
 

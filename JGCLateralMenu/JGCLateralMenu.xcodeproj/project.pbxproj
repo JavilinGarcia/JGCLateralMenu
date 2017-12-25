@@ -28,6 +28,8 @@
 		592341F61F7827FC00376CF1 /* UIImage+JGCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592341F51F7827FC00376CF1 /* UIImage+JGCExtension.swift */; };
 		592341F81F78287800376CF1 /* String+JGCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592341F71F78287800376CF1 /* String+JGCExtension.swift */; };
 		594C8E0E1F8A27B0006D5C0B /* NSDictionary+JGCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594C8E0D1F8A27B0006D5C0B /* NSDictionary+JGCExtension.swift */; };
+		59F243E71FF19F1E003BF6E4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F243E61FF19F1E003BF6E4 /* FirstViewController.swift */; };
+		59F243E91FF19F2E003BF6E4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F243E81FF19F2E003BF6E4 /* SecondViewController.swift */; };
 		832215106F245A7661ECB2AD /* Pods_JGCLateralMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD1A186A1666088019F0371 /* Pods_JGCLateralMenu.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		592341F51F7827FC00376CF1 /* UIImage+JGCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+JGCExtension.swift"; sourceTree = "<group>"; };
 		592341F71F78287800376CF1 /* String+JGCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JGCExtension.swift"; sourceTree = "<group>"; };
 		594C8E0D1F8A27B0006D5C0B /* NSDictionary+JGCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDictionary+JGCExtension.swift"; sourceTree = "<group>"; };
+		59F243E61FF19F1E003BF6E4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		59F243E81FF19F2E003BF6E4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		BDD1A186A1666088019F0371 /* Pods_JGCLateralMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JGCLateralMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7A57E5FCD6FD471AC13656 /* Pods-JGCLateralMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGCLateralMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JGCLateralMenu/Pods-JGCLateralMenu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +124,8 @@
 				592341CB1F780ED800376CF1 /* LaunchScreen.storyboard */,
 				592341CE1F780ED800376CF1 /* Info.plist */,
 				592341C91F780ED800376CF1 /* Assets.xcassets */,
+				59F243E61FF19F1E003BF6E4 /* FirstViewController.swift */,
+				59F243E81FF19F2E003BF6E4 /* SecondViewController.swift */,
 			);
 			path = JGCLateralMenu;
 			sourceTree = "<group>";
@@ -319,6 +325,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F243E91FF19F2E003BF6E4 /* SecondViewController.swift in Sources */,
+				59F243E71FF19F1E003BF6E4 /* FirstViewController.swift in Sources */,
 				592341C51F780ED800376CF1 /* ViewController.swift in Sources */,
 				592341D51F78155300376CF1 /* MenuViewController.swift in Sources */,
 				592341F61F7827FC00376CF1 /* UIImage+JGCExtension.swift in Sources */,
